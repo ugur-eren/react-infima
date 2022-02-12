@@ -4,7 +4,6 @@ import {Theme} from '../../Types';
 import {DefaultTheme} from '../../Constants';
 
 interface Props extends React.HTMLAttributes<HTMLSpanElement> {
-  className?: string;
   theme?: Theme;
 }
 

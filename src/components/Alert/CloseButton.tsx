@@ -1,9 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  className?: string;
-}
+type Props = React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 const CloseButton: React.VFC<Props> = (props) => {
   const {className, ...restProps} = props;

@@ -5,7 +5,6 @@ import {DefaultTheme} from '../../Constants';
 import {Theme} from '../../Types';
 
 interface Props extends React.HTMLAttributes<HTMLDivElement> {
-  className?: string;
   theme?: Theme;
 }
 

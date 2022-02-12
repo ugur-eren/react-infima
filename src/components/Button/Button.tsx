@@ -4,9 +4,8 @@ import {DefaultSize, DefaultTheme} from '../../Constants';
 import {Size, Theme} from '../../Types';
 
 interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  className?: string;
   theme?: Theme | 'link';
-  size?: Size;
+  size?: Omit<Size, 'xlarge'>;
   outline?: boolean;
   active?: boolean;
   disabled?: boolean;
