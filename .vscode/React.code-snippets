@@ -1,0 +1,23 @@
+{
+  "CreateFC": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": "crFC",
+    "description": "Create a empty function component",
+    "body": [
+      "import React from 'react';",
+      "",
+      "const ${TM_FILENAME_BASE}$1: React.$2FC = (props) => {",
+      "  const {$3} = props;",
+      "",
+      "  return (",
+      "    <div>",
+      "      <div />",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE}$1;",
+      ""
+    ]
+  }
+}
