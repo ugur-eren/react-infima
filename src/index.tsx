@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 
+import 'infima/dist/css/default/default.css';
 import './index.css';
 
 const Root: React.FC = () => {
