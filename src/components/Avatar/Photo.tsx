@@ -21,7 +21,6 @@ const Photo: React.VFC<Props> = (props) => {
     className,
   );
 
-  // eslint-disable-next-line jsx-a11y/alt-text
   return <img className={classes} {...restProps} />;
 };
 
