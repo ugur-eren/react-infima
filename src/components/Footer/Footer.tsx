@@ -27,12 +27,11 @@ interface SubComponents {
 const Footer: React.FC<Props> & SubComponents = (props) => {
   const {children, className, dark, ...restProps} = props;
 
-  const footerClasses = classNames('footer', {'footer--dark': dark}, className);
-  const divClasses = classNames('container', 'container--fluid');
+  const classes = classNames('footer', {'footer--dark': dark}, className);
 
   return (
-    <footer className={footerClasses} {...restProps}>
-      <div className={divClasses}>{children}</div>
+    <footer className={classes} {...restProps}>
+      {children}
     </footer>
   );
 };
