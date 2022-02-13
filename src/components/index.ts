@@ -12,3 +12,4 @@ export {default as Hero} from './Hero/Hero';
 export {default as Navbar} from './Navbar/Navbar';
 export {default as PaginationNav} from './PaginationNav/PaginationNav';
 export {default as Pagination} from './Pagination/Pagination';
+export {default as Pills} from './Pills/Pills';
