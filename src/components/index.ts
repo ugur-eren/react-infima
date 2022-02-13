@@ -9,3 +9,4 @@ export {default as Dropdown} from './Dropdown/Dropdown';
 export {default as Footer} from './Footer/Footer';
 export {default as Container} from './Container/Container';
 export {default as Hero} from './Hero/Hero';
+export {default as Navbar} from './Navbar/Navbar';
