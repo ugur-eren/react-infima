@@ -7,3 +7,4 @@ export {default as Breadcrumbs} from './Breadcrumbs/Breadcrumbs';
 export {default as Card} from './Card/Card';
 export {default as Dropdown} from './Dropdown/Dropdown';
 export {default as Footer} from './Footer/Footer';
+export {default as Container} from './Container/Container';
