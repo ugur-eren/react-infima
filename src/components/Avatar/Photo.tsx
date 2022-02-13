@@ -4,7 +4,8 @@ import {Size} from '../../Types';
 import {DefaultSize} from '../../Constants';
 
 interface Props
-  extends React.DetailedHTMLProps<React.ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement> {
+  extends React.ImgHTMLAttributes<HTMLImageElement>,
+    React.HTMLAttributes<HTMLImageElement> {
   size?: Size;
 }
 
