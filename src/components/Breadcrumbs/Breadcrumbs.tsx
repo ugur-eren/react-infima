@@ -6,7 +6,7 @@ import Item from './Item';
 import Link from './Link';
 
 interface Props extends React.HTMLAttributes<HTMLUListElement> {
-  size?: Omit<Size, 'xlarge'>;
+  size?: Size;
 }
 
 interface SubComponents {

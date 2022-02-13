@@ -6,7 +6,7 @@ import {DefaultSize} from '../../Constants';
 interface Props
   extends React.ImgHTMLAttributes<HTMLImageElement>,
     React.HTMLAttributes<HTMLImageElement> {
-  size?: Size;
+  size?: Size | 'xlarge';
 }
 
 const Photo: React.VFC<Props> = (props) => {
