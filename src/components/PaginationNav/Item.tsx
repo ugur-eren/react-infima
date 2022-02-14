@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 
 interface Props extends React.HTMLAttributes<HTMLDivElement> {
-  type: 'previous' | 'next';
+  type?: 'previous' | 'next';
 }
 
 const Item: React.FC<Props> = (props) => {
