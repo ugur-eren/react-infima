@@ -1,7 +1,6 @@
 import classNames from 'classnames';
 import Menu from './Menu';
 import Item from './Item';
-import Link from './Link';
 
 interface Props extends React.HTMLAttributes<HTMLDivElement> {
   hoverable?: boolean;
@@ -11,7 +10,6 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
 interface SubComponents {
   Menu: typeof Menu;
   Item: typeof Item;
-  Link: typeof Link;
 }
 
 const Dropdown: React.FC<Props> & SubComponents = (props) => {
@@ -33,6 +31,5 @@ const Dropdown: React.FC<Props> & SubComponents = (props) => {
 
 Dropdown.Menu = Menu;
 Dropdown.Item = Item;
-Dropdown.Link = Link;
 
 export default Dropdown;
