@@ -1,16 +1,10 @@
 import classNames from 'classnames';
 import Item from './Item';
-import Link from './Link';
-import Label from './Label';
-import SubLabel from './SubLabel';
 
 type Props = React.HTMLAttributes<HTMLElement>;
 
 interface SubComponents {
   Item: typeof Item;
-  Link: typeof Link;
-  Label: typeof Label;
-  SubLabel: typeof SubLabel;
 }
 
 const PaginationNav: React.FC<Props> & SubComponents = (props) => {
@@ -26,8 +20,5 @@ const PaginationNav: React.FC<Props> & SubComponents = (props) => {
 };
 
 PaginationNav.Item = Item;
-PaginationNav.Link = Link;
-PaginationNav.Label = Label;
-PaginationNav.SubLabel = SubLabel;
 
 export default PaginationNav;
