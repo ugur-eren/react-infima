@@ -1,4 +1,3 @@
-import React from 'react';
 import classNames from 'classnames';
 import Links from './Links';
 import Link from './Link';

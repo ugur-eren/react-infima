@@ -1,4 +1,3 @@
-import React from 'react';
 import classNames from 'classnames';
 import Header from './Header';
 import Body from './Body';

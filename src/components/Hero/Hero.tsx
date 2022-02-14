@@ -1,4 +1,3 @@
-import React from 'react';
 import classNames from 'classnames';
 import Title from './Title';
 import Subtitle from './Subtitle';

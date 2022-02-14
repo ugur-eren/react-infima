@@ -1,4 +1,3 @@
-import React from 'react';
 import classNames from 'classnames';
 import Photo from './Photo';
 import Intro from './Intro';

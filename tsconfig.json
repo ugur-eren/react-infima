@@ -2,12 +2,7 @@
   "compilerOptions": {
     "target": "es5",
     "module": "ESNEXT",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext",
-      "ESNext.String"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext", "ESNext.String"],
     "allowJs": true,
     "jsx": "react-jsx",
     "isolatedModules": true,
@@ -21,10 +16,10 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
-    "noEmit": true
+    "noEmit": true,
+    "declaration": true,
+    "outDir": "./"
   },
-  "include": [
-    "src",
-    "types.d.ts"
-  ]
+  "include": ["src"],
+  "exclude": ["dist"]
 }

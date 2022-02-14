@@ -1,4 +1,3 @@
-import React from 'react';
 import classNames from 'classnames';
 import {DefaultSize, DefaultTheme} from '../../Constants';
 import {Size, Theme} from '../../Types';

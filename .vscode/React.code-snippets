@@ -4,8 +4,6 @@
     "prefix": "crFC",
     "description": "Create a empty function component",
     "body": [
-      "import React from 'react';",
-      "",
       "const ${TM_FILENAME_BASE}$1: React.$2FC = (props) => {",
       "  const {$3} = props;",
       "",

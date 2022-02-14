@@ -1,4 +1,3 @@
-import React from 'react';
 import classNames from 'classnames';
 import Brand from './Brand/Brand';
 import Items from './Items';

@@ -1,4 +1,3 @@
-import React from 'react';
 import classNames from 'classnames';
 import Menu from './Menu';
 import Item from './Item';

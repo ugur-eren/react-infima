@@ -9,7 +9,8 @@
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
-    "plugin:jest/recommended"
+    "plugin:jest/recommended",
+    "plugin:react/jsx-runtime"
   ],
 
   "env": {
