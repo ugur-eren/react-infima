@@ -9,24 +9,14 @@
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
-    "plugin:jest/recommended",
     "plugin:react/jsx-runtime"
   ],
 
   "env": {
-    "browser": true,
-    "jest": true
+    "browser": true
   },
 
-  "plugins": [
-    "react",
-    "@typescript-eslint",
-    "import",
-    "jsx-a11y",
-    "prettier",
-    "jest",
-    "eslint-comments"
-  ],
+  "plugins": ["react", "@typescript-eslint", "import", "jsx-a11y", "prettier", "eslint-comments"],
 
   "rules": {
     "import/prefer-default-export": 0,
