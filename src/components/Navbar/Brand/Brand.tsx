@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import Logo from './Logo';
 import Title from './Title';
 
-type Props = React.HTMLAttributes<HTMLAnchorElement>;
+type Props = React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
 interface SubComponents {
   Logo: typeof Logo;

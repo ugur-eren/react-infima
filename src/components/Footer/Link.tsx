@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 
-type Props = React.HTMLAttributes<HTMLAnchorElement>;
+type Props = React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
 const Link: React.FC<Props> = (props) => {
   const {children, className, ...restProps} = props;
