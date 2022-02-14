@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 
-interface Props extends React.HTMLAttributes<HTMLUListElement> {
+interface Props extends React.HTMLAttributes<HTMLLIElement> {
   active?: boolean;
   disabled?: boolean;
 }
@@ -17,9 +17,9 @@ const Item: React.FC<Props> = (props) => {
   );
 
   return (
-    <ul className={classes} {...restProps}>
+    <li className={classes} {...restProps}>
       {children}
-    </ul>
+    </li>
   );
 };
 
