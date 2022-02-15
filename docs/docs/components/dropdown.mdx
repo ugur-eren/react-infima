@@ -1,0 +1,52 @@
+---
+id: dropdown
+title: Dropdown
+---
+
+import Playground from '@theme/Playground';
+
+## Hoverable
+
+<Playground code={`
+  <Dropdown hoverable>
+    <Button theme="primary">Hover Me</Button>
+\n\
+    <Dropdown.Menu>
+      <Dropdown.Item href="#url">Home</Dropdown.Item>
+      <Dropdown.Item href="#url">Profile</Dropdown.Item>
+      <Dropdown.Item href="#url">Settings</Dropdown.Item>
+      <Dropdown.Item href="#url">Help</Dropdown.Item>
+      <Dropdown.Item href="#url">Logout</Dropdown.Item>
+    </Dropdown.Menu>
+  </Dropdown>
+`} />
+
+## Clickable
+
+<Playground code={`
+  <Dropdown className="dropdown-clickable">
+    <Button data-toggle="dropdown-clickable">Click Me</Button>
+\n\
+    <Dropdown.Menu>
+      <Dropdown.Item href="#url">Home</Dropdown.Item>
+      <Dropdown.Item href="#url">Profile</Dropdown.Item>
+      <Dropdown.Item href="#url">Settings</Dropdown.Item>
+      <Dropdown.Item href="#url">Help</Dropdown.Item>
+      <Dropdown.Item href="#url">Logout</Dropdown.Item>
+    </Dropdown.Menu>
+  </Dropdown>
+`} />
+
+## Right-Aligned
+
+<Playground code={`
+  <Dropdown hoverable align="right">
+    <Button theme="info">Right-Aligned Long Children</Button>
+\n\
+    <Dropdown.Menu>
+      <Dropdown.Item href="#url">This is a very long item</Dropdown.Item>
+      <Dropdown.Item href="#url">And so is this item</Dropdown.Item>
+      <Dropdown.Item href="#url">Who are you kidding, I'm the longessssssssst!</Dropdown.Item>
+    </Dropdown.Menu>
+  </Dropdown>
+`} />

@@ -1,0 +1,74 @@
+---
+id: pagination-nav
+title: Pagination Nav
+---
+
+import Playground from '@theme/Playground';
+
+## Standard
+
+<Playground code={`
+  <PaginationNav>
+    <PaginationNav.Item
+      type="previous"
+      label="Installation"
+      sublabel="Previous"
+      href="#url"
+    />
+\n\
+    <PaginationNav.Item
+      type="next"
+      label="Getting Started"
+      sublabel="Next"
+      href="#url"
+    />
+  </PaginationNav>
+`} />
+
+Extremely long titles wrap on to the next line.
+
+<Playground code={`
+  <PaginationNav>
+    <PaginationNav.Item
+      type="previous"
+      label="Some Extremely Long Long Long Long Title"
+      sublabel="Previous"
+      href="#url"
+    />
+\n\
+    <PaginationNav.Item
+      type="next"
+      label="AnotherExtremelyLongTitleWithoutBreaksProbablyAComponent"
+      sublabel="Next"
+      href="#url"
+    />
+  </PaginationNav>
+`} />
+
+## Only Previous
+
+<Playground code={`
+  <PaginationNav>
+    <PaginationNav.Item
+      type="previous"
+      label="Installation"
+      sublabel="Previous"
+      href="#url"
+    />
+  </PaginationNav>
+`} />
+
+## Only Next
+
+<Playground code={`
+  <PaginationNav>
+    <PaginationNav.Item />
+    
+    <PaginationNav.Item
+      type="next"
+      label="Getting Started"
+      sublabel="Next"
+      href="#url"
+    />
+  </PaginationNav>
+`} />

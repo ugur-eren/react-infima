@@ -1,0 +1,100 @@
+---
+id: pagination
+title: Pagination
+---
+
+import Playground from '@theme/Playground';
+
+## Default
+
+<Playground code={`
+  <Pagination>
+    <Pagination.Item>
+      <Pagination.Link href="#url">«</Pagination.Link>
+    </Pagination.Item>
+\n\
+    <Pagination.Item>
+      <Pagination.Link href="#url">1</Pagination.Link>
+    </Pagination.Item>
+\n\
+    <Pagination.Item active>
+      <Pagination.Link href="#url">2</Pagination.Link>
+    </Pagination.Item>
+\n\
+    <Pagination.Item>
+      <Pagination.Link href="#url">3</Pagination.Link>
+    </Pagination.Item>
+\n\
+    <Pagination.Item>
+      <span>...</span>
+    </Pagination.Item>
+\n\
+    <Pagination.Item>
+      <Pagination.Link href="#url">»</Pagination.Link>
+    </Pagination.Item>
+  </Pagination>
+`} />
+
+## Small
+
+<Playground code={`
+  <Pagination size="small">
+    <Pagination.Item>
+      <Pagination.Link href="#url">«</Pagination.Link>
+    </Pagination.Item>
+\n\
+    <Pagination.Item>
+      <span>...</span>
+    </Pagination.Item>
+\n\
+    <Pagination.Item>
+      <Pagination.Link href="#url">5</Pagination.Link>
+    </Pagination.Item>
+\n\
+    <Pagination.Item active>
+      <Pagination.Link href="#url">6</Pagination.Link>
+    </Pagination.Item>
+\n\
+    <Pagination.Item>
+      <Pagination.Link href="#url">7</Pagination.Link>
+    </Pagination.Item>
+\n\
+    <Pagination.Item>
+      <span>...</span>
+    </Pagination.Item>
+\n\
+    <Pagination.Item>
+      <Pagination.Link href="#url">»</Pagination.Link>
+    </Pagination.Item>
+  </Pagination>
+`} />
+
+## Large
+
+<Playground code={`
+  <Pagination size="large">
+    <Pagination.Item>
+      <Pagination.Link href="#url">«</Pagination.Link>
+    </Pagination.Item>
+\n\
+    <Pagination.Item>
+      <span>...</span>
+    </Pagination.Item>
+\n\
+    <Pagination.Item>
+      <Pagination.Link href="#url">7</Pagination.Link>
+    </Pagination.Item>
+\n\
+    <Pagination.Item>
+      <Pagination.Link href="#url">8</Pagination.Link>
+    </Pagination.Item>
+\n\
+    <Pagination.Item active>
+      <Pagination.Link href="#url">9</Pagination.Link>
+    </Pagination.Item>
+\n\
+    <Pagination.Item>
+      <Pagination.Link href="#url">»</Pagination.Link>
+    </Pagination.Item>
+  </Pagination>
+`} />

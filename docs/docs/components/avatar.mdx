@@ -1,0 +1,98 @@
+---
+id: avatar
+title: Avatar
+---
+
+import Playground from '@theme/Playground';
+
+## Various Orientations
+
+### Horizontal
+
+<Playground code={`
+  <Avatar>
+    <Avatar.Photo
+      size="large"
+      src="https://avatars1.githubusercontent.com/u/810438?s=460"
+      alt="Dan Abramov Profile"
+    />
+\n\
+    <Avatar.Intro
+      name="Dan Abramov"
+      subtitle="Working on @reactjs. Co-author of Redux and Create React App."
+    />
+  </Avatar>
+`} />
+
+### Vertical
+
+<Playground code={`
+  <Avatar direction="vertical">
+    <Avatar.Photo
+      size="xlarge"
+      src="https://avatars1.githubusercontent.com/u/977348?s=460&amp;v=4"
+    />
+\n\
+    <Avatar.Intro
+      name="Dan Abramov"
+      subtitle={<>
+        Maker of things: ReactJS. Working on: <a href="https://twitter.com/reasonml">@reasonml</a>.
+        At: Facebook Engineering.
+      </>}
+    />
+  </Avatar>
+`} />
+
+## Various Sizes
+
+### Small
+
+<Playground code={`
+  <Avatar>
+    <Avatar.Photo
+      size="small"
+      src="https://avatars3.githubusercontent.com/u/13352?s=400&amp;v=4"
+    />
+\n\
+    <Avatar.Intro name="Christoph Pojer" />
+  </Avatar>
+`} />
+
+### Default
+
+<Playground code={`
+  <Avatar>
+    <Avatar.Photo src="https://avatars1.githubusercontent.com/u/165856?s=460&amp;v=4" />
+\n\
+    <Avatar.Intro name="Hector Ramos" subtitle="React Native @facebook" />
+  </Avatar>
+`} />
+
+### Large
+
+<Playground code={`
+  <Avatar>
+    <Avatar.Photo
+      size="large"
+      src="https://avatars2.githubusercontent.com/u/197597?s=460"
+    />
+\n\
+    <Avatar.Intro name="Christopher Chedeau" subtitle="Frenchy Front End Engineer" />
+  </Avatar>
+`} />
+
+### Extra Large
+
+<Playground code={`
+  <Avatar>
+    <Avatar.Photo
+      size="xlarge"
+      src="https://avatars0.githubusercontent.com/u/3757713?s=460&amp;v=4"
+    />
+\n\
+    <Avatar.Intro
+      name="Joel Marcey"
+      subtitle="Developer Advocate at Facebook, co-creator of Docusaurus"
+    />
+  </Avatar>
+`} />

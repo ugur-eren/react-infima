@@ -1,0 +1,108 @@
+---
+id: card
+title: Card
+---
+
+import Playground from '@theme/Playground';
+import '../../src/css/card.css';
+
+## Simple Card
+
+<Playground
+  componentContainerProps={{
+    className: 'card-demo-container',
+  }}
+  code={`
+    <div class="card-demo">
+      <Card>
+        <Card.Header>
+          <h3>Lorem Ipsum</h3>
+        </Card.Header>
+\n\
+        <Card.Body>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+            suspendisse ultrices gravida.
+          </p>
+        </Card.Body>
+\n\
+        <Card.Footer>
+          <Button block>See All</Button>
+        </Card.Footer>
+      </Card>
+    </div>
+  `} />
+
+
+## Feed Item
+
+<Playground
+  componentContainerProps={{
+    className: 'card-demo-container',
+  }}
+  code={`
+    <div class="card-demo">
+      <Card>
+        <Card.Header>
+          <Avatar>
+            <Avatar.Photo src="https://avatars1.githubusercontent.com/u/4060187?s=460&v=4" />
+\n\
+            <Avatar.Intro
+              name="Jared Palmer"
+              subtitle="Consultant, Speaker, Lead Engineer"
+            />
+          </Avatar>
+        </Card.Header>
+\n\
+        <Card.Image>
+          <img
+            src="https://images.unsplash.com/photo-1501619951397-5ba40d0f75da?ixlib=rb-1.2.1&auto=format&fit=crop&w=1655&q=80"
+            alt="Image alt text"
+            title="Logo Title Text 1"
+          />
+        </Card.Image>
+\n\
+        <Card.Footer>
+          <ButtonGroup block>
+            <Button>Like</Button>
+            <Button>Comment</Button>
+            <Button>Share</Button>
+          </ButtonGroup>
+        </Card.Footer>
+      </Card>
+    </div>
+  `} />
+
+## Photo-centric
+
+<Playground
+  componentContainerProps={{
+    className: 'card-demo-container',
+  }}
+  code={`
+    <div class="card-demo">
+      <Card>
+        <Card.Image>
+          <img
+            src="https://images.unsplash.com/photo-1506624183912-c602f4a21ca7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+            alt="Image alt text"
+            title="Logo Title Text 1"
+          />
+        </Card.Image>
+\n\
+        <Card.Body>
+          <h4>Quaco Lighthouse</h4>
+          <small>
+            The Quaco Head Lighthouse is a well maintained lighthouse close to St.
+            Martins. It is a short, beautiful walk to the lighthouse along the
+            seashore.
+          </small>
+        </Card.Body>
+\n\
+        <Card.Footer>
+          <Button block theme="primary">Visit</Button>
+        </Card.Footer>
+      </Card>
+    </div>
+  `} />

@@ -1,7 +1,7 @@
 build
 coverage
 public
-src/react-app-env.d.ts
+docs
 
 # Storybook
 storybook/storyLoader.js

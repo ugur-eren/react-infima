@@ -1,27 +1,34 @@
 # React Infima
 
-React components for infima. This library doesn't add any new features to infima, it just ports the components to react with full TypeScript support.
+React Infima provides React components for the Infima styling framework. It doesn't add any new features to Infima, it just ports the components to React.
 
 ### Both React Infima and Infima is not yet ready for production use.
 
 ## Available Components
 
-| Component      | Support |
-| -------------- | ------- |
-| Alert          | ✅      |
-| Avatar         | ✅      |
-| Badge          | ✅      |
-| Breadcrumbs    | ✅      |
-| Button         | ✅      |
-| Card           | ✅      |
-| Dropdown       | ✅      |
-| Footer         | ⚠️      |
-| Hero           | ✅      |
-| Navbar         | ⚠️      |
-| Pagination Nav | ✅      |
-| Pagination     | ✅      |
-| Pills          | ✅      |
-| Tabs           | ✅      |
+Head over to [documentation](https://ugureren.net/react-infima/getting-started/introduction) for more information.
+
+| Component       | Support |
+| --------------- | ------- |
+| Alert           | ✅      |
+| Avatar          | ✅      |
+| Badge           | ✅      |
+| Breadcrumbs     | ✅      |
+| Button          | ✅      |
+| Links as Button | ❌      |
+| ButtonGroup     | ✅      |
+| ButtonGroup     | ✅      |
+| Card            | ⚠️      |
+| Dropdown        | ✅      |
+| Footer          | ⚠️      |
+| Hero            | ✅      |
+| Navbar          | ⚠️      |
+| Pagination Nav  | ✅      |
+| Pagination      | ✅      |
+| Pills           | ✅      |
+| Tabs            | ✅      |
+| Layout          | ❌      |
+| Utilities       | ❌      |
 
 ✅: Supported.
 
@@ -50,3 +57,5 @@ yarn add infima react-infima
 ```
 
 And start using the components of Infima by importing it from React Infima.
+
+Head over to [documentation](https://ugureren.net/react-infima) for more information.

@@ -1,0 +1,45 @@
+---
+id: hero
+title: Hero
+---
+
+import Playground from '@theme/Playground';
+
+## Default
+
+<Playground code={`
+  <Hero>
+    <Container>
+      <Hero.Title>Hero Title</Hero.Title>
+      <Hero.Subtitle>Not all heroes wear capes</Hero.Subtitle>
+\n\
+      <Button outline size="large">Get Started</Button>
+    </Container>
+  </Hero>
+`} />
+
+## Dark
+
+<Playground code={`
+  <Hero theme="dark">
+    <Container>
+      <Hero.Title>Hero Title</Hero.Title>
+      <Hero.Subtitle>Not all heroes wear capes</Hero.Subtitle>
+\n\
+      <Button outline theme="primary" size="large">Get Started</Button>
+    </Container>
+  </Hero>
+`} />
+
+## Primary
+
+<Playground code={`
+  <Hero theme="primary">
+    <Container>
+      <Hero.Title>Hero Title</Hero.Title>
+      <Hero.Subtitle>Not all heroes wear capes</Hero.Subtitle>
+\n\
+      <Button size="large">Get Started</Button>
+    </Container>
+  </Hero>
+`} />

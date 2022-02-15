@@ -1,0 +1,7 @@
+.button-list button {
+  margin-right: 6px;
+}
+
+.button-list button:last-child {
+  margin-right: 0;
+}
