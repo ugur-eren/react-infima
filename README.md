@@ -6,7 +6,7 @@ React Infima provides React components for the Infima styling framework. It does
 
 ## Available Components
 
-Head over to [documentation](https://ugureren.net/react-infima/getting-started/introduction) for more information.
+Head over to [documentation](https://ugureren.net/react-infima) for more information.
 
 | Component       | Support |
 | --------------- | ------- |
