@@ -2,7 +2,7 @@ import classNames from 'classnames';
 
 interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   type?: 'previous' | 'next';
-  label: string;
+  label?: string;
   sublabel?: string;
   linkClassName?: string;
   labelClassName?: string;
@@ -32,11 +32,13 @@ const Item: React.VFC<Props> = (props) => {
 
   return (
     <div className={itemClasses}>
-      <a className={linkClasses} {...restProps}>
-        <div className={labelClasses}>{label}</div>
+      {label || sublabel ? (
+        <a className={linkClasses} {...restProps}>
+          {sublabel ? <div className={sublabelClasses}>{sublabel}</div> : null}
 
-        {sublabel ? <div className={sublabelClasses}>{sublabel}</div> : null}
-      </a>
+          <div className={labelClasses}>{label}</div>
+        </a>
+      ) : null}
     </div>
   );
 };
