@@ -4,7 +4,7 @@ const config = {
   tagline: 'React components for Infima styling framework',
   url: 'https://ugureren.net',
   baseUrl: '/react-infima/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   organizationName: 'ugur-eren',
   projectName: 'react-infima',
