@@ -6145,8 +6145,10 @@ react-html-parser@^2.0.2:
   dependencies:
     htmlparser2 "^3.9.0"
 
-react-infima@../../react-infima-package:
-  version "0.0.1"
+react-infima@^0.0.1-alpha.1:
+  version "0.0.1-alpha.1"
+  resolved "https://registry.npmjs.org/react-infima/-/react-infima-0.0.1-alpha.1.tgz#0a49983485425448945318474e9a2dbd3fe87d5c"
+  integrity sha512-82mtswY2JNDYAK+lJprr0ZJtfjO8kA/HhnDxVkv1LWthyeshE2nuEqe60vyM5eC/ATvGaaw7uxG4md5dmt/hYg==
   dependencies:
     classnames "^2.3.1"
 
