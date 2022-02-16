@@ -6,22 +6,27 @@
  */
 
 module.exports = {
-  docs: {
-    Components: [
-      'index',
-      'alert',
-      'avatar',
-      'badge',
-      'breadcrumbs',
-      'button',
-      'button-group',
-      'card',
-      'dropdown',
-      'hero',
-      'pagination-nav',
-      'pagination',
-      'pills',
-      'tabs',
-    ],
-  },
+  docs: [
+    'available-components',
+    {
+      type: 'category',
+      label: 'Components',
+      collapsed: false,
+      items: [
+        'alert',
+        'avatar',
+        'badge',
+        'breadcrumbs',
+        'button',
+        'button-group',
+        'card',
+        'dropdown',
+        'hero',
+        'pagination-nav',
+        'pagination',
+        'pills',
+        'tabs',
+      ]
+    },
+  ],
 };

@@ -8,27 +8,26 @@ React Infima provides React components for the Infima styling framework. It does
 
 Head over to [documentation](https://ugureren.net/react-infima) for more information.
 
-| Component       | Support |
-| --------------- | ------- |
-| Alert           | ✅      |
-| Avatar          | ✅      |
-| Badge           | ✅      |
-| Breadcrumbs     | ✅      |
-| Button          | ✅      |
-| Links as Button | ❌      |
-| ButtonGroup     | ✅      |
-| ButtonGroup     | ✅      |
-| Card            | ⚠️      |
-| Dropdown        | ✅      |
-| Footer          | ⚠️      |
-| Hero            | ✅      |
-| Navbar          | ⚠️      |
-| Pagination Nav  | ✅      |
-| Pagination      | ✅      |
-| Pills           | ✅      |
-| Tabs            | ✅      |
-| Layout          | ❌      |
-| Utilities       | ❌      |
+| Component                                                          | Support |
+| ------------------------------------------------------------------ | ------- |
+| [Alert](https://ugureren.net/react-infima/alert)                   | ✅      |
+| [Avatar](https://ugureren.net/react-infima/avatar)                 | ✅      |
+| [Badge](https://ugureren.net/react-infima/badge)                   | ✅      |
+| [Breadcrumbs](https://ugureren.net/react-infima/breadcrumbs)       | ✅      |
+| [Button](https://ugureren.net/react-infima/button)                 | ✅      |
+| Links as Button                                                    | ❌      |
+| [ButtonGroup](https://ugureren.net/react-infima/button-group)      | ✅      |
+| [Card](https://ugureren.net/react-infima/card)                     | ⚠️      |
+| [Dropdown](https://ugureren.net/react-infima/dropdown)             | ✅      |
+| Footer                                                             | ⚠️      |
+| [Hero](https://ugureren.net/react-infima/hero)                     | ✅      |
+| Navbar                                                             | ⚠️      |
+| [Pagination Nav](https://ugureren.net/react-infima/pagination-nav) | ✅      |
+| [Pagination](https://ugureren.net/react-infima/pagination)         | ✅      |
+| [Pills](https://ugureren.net/react-infima/pills)                   | ✅      |
+| [Tabs](https://ugureren.net/react-infima/tabs)                     | ✅      |
+| Layout                                                             | ❌      |
+| Utilities                                                          | ❌      |
 
 ✅: Supported.
 
