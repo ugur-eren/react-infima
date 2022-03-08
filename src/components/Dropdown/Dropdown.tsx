@@ -4,6 +4,7 @@ import Item from './Item';
 
 interface Props extends React.HTMLAttributes<HTMLDivElement> {
   hoverable?: boolean;
+  show?: boolean;
   align?: 'left' | 'right';
 }
 
@@ -13,11 +14,12 @@ interface SubComponents {
 }
 
 const Dropdown: React.FC<Props> & SubComponents = (props) => {
-  const {children, className, hoverable, align, ...restProps} = props;
+  const {children, className, hoverable, show, align, ...restProps} = props;
 
   const classes = classNames(
     'dropdown',
     {'dropdown--hoverable': hoverable},
+    {'dropdown--show': show},
     {'dropdown--right': align === 'right'},
     className,
   );
