@@ -1,13 +1,7 @@
 import classNames from 'classnames';
+import {AvatarIntroProps, AvatarIntroPropTypes} from './Intro.props';
 
-interface Props extends React.HTMLAttributes<HTMLDivElement> {
-  name: string;
-  subtitle?: string;
-  nameClassName?: string;
-  subtitleClassName?: string;
-}
-
-const Intro: React.VFC<Props> = (props) => {
+const Intro: React.VFC<AvatarIntroProps> = (props) => {
   const {className, name, subtitle, nameClassName, subtitleClassName, ...restProps} = props;
 
   const introClasses = classNames('avatar__intro', className);
@@ -22,5 +16,7 @@ const Intro: React.VFC<Props> = (props) => {
     </div>
   );
 };
+
+Intro.propTypes = AvatarIntroPropTypes;
 
 export default Intro;
