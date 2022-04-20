@@ -1,10 +1,7 @@
 import classNames from 'classnames';
+import {DropdownItemProps, DropdownItemPropTypes} from './Item.props';
 
-interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
-  linkClassName?: string;
-}
-
-const Item: React.FC<Props> = (props) => {
+const Item: React.FC<DropdownItemProps> = (props) => {
   const {children, className, linkClassName, ...restProps} = props;
 
   const itemClasses = classNames(className);
@@ -18,5 +15,7 @@ const Item: React.FC<Props> = (props) => {
     </li>
   );
 };
+
+Item.propTypes = DropdownItemPropTypes;
 
 export default Item;
