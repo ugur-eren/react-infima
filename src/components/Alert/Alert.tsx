@@ -1,17 +1,9 @@
 import classNames from 'classnames';
-import CloseButton from './CloseButton';
+import CloseButton from './CloseButton/CloseButton';
 import {DefaultTheme} from '../../Constants';
-import {Theme} from '../../Types';
+import {AlertProps, AlertPropTypes, AlertSubComponents} from './Alert.props';
 
-interface Props extends React.HTMLAttributes<HTMLDivElement> {
-  theme?: Theme;
-}
-
-interface SubComponents {
-  CloseButton: typeof CloseButton;
-}
-
-const Alert: React.FC<Props> & SubComponents = (props) => {
+const Alert: React.FC<AlertProps> & AlertSubComponents = (props) => {
   const {children, className, theme = DefaultTheme, ...restProps} = props;
 
   const classes = classNames(
@@ -35,5 +27,7 @@ const Alert: React.FC<Props> & SubComponents = (props) => {
 };
 
 Alert.CloseButton = CloseButton;
+
+Alert.propTypes = AlertPropTypes;
 
 export default Alert;

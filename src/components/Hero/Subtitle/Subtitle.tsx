@@ -1,8 +1,7 @@
 import classNames from 'classnames';
+import {HeroSubtitleProps} from './Subtitle.props';
 
-type Props = React.HTMLAttributes<HTMLParagraphElement>;
-
-const Subtitle: React.FC<Props> = (props) => {
+const Subtitle: React.FC<HeroSubtitleProps> = (props) => {
   const {children, className, ...restProps} = props;
 
   const classes = classNames('hero__subtitle', className);

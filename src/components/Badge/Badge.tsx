@@ -1,12 +1,8 @@
 import classNames from 'classnames';
-import {Theme} from '../../Types';
 import {DefaultTheme} from '../../Constants';
+import {BadgeProps, BadgePropTypes} from './Badge.props';
 
-interface Props extends React.HTMLAttributes<HTMLSpanElement> {
-  theme?: Theme;
-}
-
-const Badge: React.FC<Props> = (props) => {
+const Badge: React.FC<BadgeProps> = (props) => {
   const {children, className, theme = DefaultTheme, ...restProps} = props;
 
   const classes = classNames(
@@ -28,5 +24,7 @@ const Badge: React.FC<Props> = (props) => {
     </span>
   );
 };
+
+Badge.propTypes = BadgePropTypes;
 
 export default Badge;

@@ -1,20 +1,10 @@
 import classNames from 'classnames';
-import Menu from './Menu';
-import Item from './Item';
+import Menu from './Menu/Menu';
+import Item from './Item/Item';
+import {DropdownProps, DropdownPropTypes, DropdownSubComponents} from './Dropdown.props';
 
-interface Props extends React.HTMLAttributes<HTMLDivElement> {
-  hoverable?: boolean;
-  show?: boolean;
-  align?: 'left' | 'right';
-}
-
-interface SubComponents {
-  Menu: typeof Menu;
-  Item: typeof Item;
-}
-
-const Dropdown: React.FC<Props> & SubComponents = (props) => {
-  const {children, className, hoverable, show, align, ...restProps} = props;
+const Dropdown: React.FC<DropdownProps> & DropdownSubComponents = (props) => {
+  const {children, className, hoverable, show, align = 'left', ...restProps} = props;
 
   const classes = classNames(
     'dropdown',
@@ -33,5 +23,7 @@ const Dropdown: React.FC<Props> & SubComponents = (props) => {
 
 Dropdown.Menu = Menu;
 Dropdown.Item = Item;
+
+Dropdown.propTypes = DropdownPropTypes;
 
 export default Dropdown;

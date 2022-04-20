@@ -1,10 +1,7 @@
 import classNames from 'classnames';
+import {ButtonGroupProps, ButtonGroupPropTypes} from './ButtonGroup.props';
 
-interface Props extends React.HTMLAttributes<HTMLDivElement> {
-  block?: boolean;
-}
-
-const ButtonGroup: React.FC<Props> = (props) => {
+const ButtonGroup: React.FC<ButtonGroupProps> = (props) => {
   const {children, className, block, ...restProps} = props;
 
   const classes = classNames('button-group', {'button-group--block': block}, className);
@@ -15,5 +12,7 @@ const ButtonGroup: React.FC<Props> = (props) => {
     </div>
   );
 };
+
+ButtonGroup.propTypes = ButtonGroupPropTypes;
 
 export default ButtonGroup;

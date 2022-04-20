@@ -1,8 +1,7 @@
 import classNames from 'classnames';
+import {PaginationLinkProps} from './Link.props';
 
-type Props = React.AnchorHTMLAttributes<HTMLAnchorElement>;
-
-const Link: React.FC<Props> = (props) => {
+const Link: React.FC<PaginationLinkProps> = (props) => {
   const {children, className, ...restProps} = props;
 
   const classes = classNames('pagination__link', className);

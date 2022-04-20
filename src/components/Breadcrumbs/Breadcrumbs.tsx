@@ -1,19 +1,14 @@
 import classNames from 'classnames';
-import {Size} from '../../Types';
 import {DefaultSize} from '../../Constants';
-import Item from './Item';
-import Link from './Link';
+import Item from './Item/Item';
+import Link from './Link/Link';
+import {
+  BreadcrumbsProps,
+  BreadcrumbsPropTypes,
+  BreadcrumbsSubComponents,
+} from './Breadcrumbs.props';
 
-interface Props extends React.HTMLAttributes<HTMLUListElement> {
-  size?: Size;
-}
-
-interface SubComponents {
-  Item: typeof Item;
-  Link: typeof Link;
-}
-
-const Breadcrumbs: React.FC<Props> & SubComponents = (props) => {
+const Breadcrumbs: React.FC<BreadcrumbsProps> & BreadcrumbsSubComponents = (props) => {
   const {children, className, size = DefaultSize} = props;
 
   const classes = classNames(
@@ -34,5 +29,7 @@ const Breadcrumbs: React.FC<Props> & SubComponents = (props) => {
 
 Breadcrumbs.Item = Item;
 Breadcrumbs.Link = Link;
+
+Breadcrumbs.propTypes = BreadcrumbsPropTypes;
 
 export default Breadcrumbs;

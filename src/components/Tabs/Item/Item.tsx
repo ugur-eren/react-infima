@@ -1,10 +1,7 @@
 import classNames from 'classnames';
+import {TabsItemProps, TabsItemPropTypes} from './Item.props';
 
-interface Props extends React.HTMLAttributes<HTMLLIElement> {
-  active?: boolean;
-}
-
-const Item: React.FC<Props> = (props) => {
+const Item: React.FC<TabsItemProps> = (props) => {
   const {children, className, active, ...restProps} = props;
 
   const classes = classNames('tabs__item', {'tabs__item--active': active}, className);
@@ -15,5 +12,7 @@ const Item: React.FC<Props> = (props) => {
     </li>
   );
 };
+
+Item.propTypes = TabsItemPropTypes;
 
 export default Item;

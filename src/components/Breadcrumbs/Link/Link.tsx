@@ -1,8 +1,7 @@
 import classNames from 'classnames';
+import {BreadcrumbsLinkProps} from './Link.props';
 
-type Props = React.AnchorHTMLAttributes<HTMLAnchorElement>;
-
-const Link: React.FC<Props> = (props) => {
+const Link: React.FC<BreadcrumbsLinkProps> = (props) => {
   const {children, className, ...restProps} = props;
 
   const classes = classNames('breadcrumbs__link', className);

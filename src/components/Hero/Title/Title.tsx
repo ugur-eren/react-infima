@@ -1,8 +1,7 @@
 import classNames from 'classnames';
+import {HeroTitleProps} from './Title.props';
 
-type Props = React.HTMLAttributes<HTMLHeadingElement>;
-
-const Title: React.FC<Props> = (props) => {
+const Title: React.FC<HeroTitleProps> = (props) => {
   const {children, className, ...restProps} = props;
 
   const classes = classNames('hero__title', className);

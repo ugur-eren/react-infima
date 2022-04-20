@@ -1,14 +1,8 @@
 import classNames from 'classnames';
-import {Size} from '../../Types';
-import {DefaultSize} from '../../Constants';
+import {DefaultSize} from '../../../Constants';
+import {AvatarPhotoProps, AvatarPhotoPropTypes} from './Photo.props';
 
-interface Props
-  extends React.ImgHTMLAttributes<HTMLImageElement>,
-    React.HTMLAttributes<HTMLImageElement> {
-  size?: Size | 'xlarge';
-}
-
-const Photo: React.VFC<Props> = (props) => {
+const Photo: React.VFC<AvatarPhotoProps> = (props) => {
   const {className, size = DefaultSize, ...restProps} = props;
 
   const classes = classNames(
@@ -23,5 +17,7 @@ const Photo: React.VFC<Props> = (props) => {
 
   return <img className={classes} {...restProps} />;
 };
+
+Photo.propTypes = AvatarPhotoPropTypes;
 
 export default Photo;

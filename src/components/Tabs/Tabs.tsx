@@ -1,15 +1,8 @@
 import classNames from 'classnames';
-import Item from './Item';
+import Item from './Item/Item';
+import {TabsProps, TabsPropTypes, TabsSubComponents} from './Tabs.props';
 
-interface Props extends React.HTMLAttributes<HTMLUListElement> {
-  block?: boolean;
-}
-
-interface SubComponents {
-  Item: typeof Item;
-}
-
-const Tabs: React.FC<Props> & SubComponents = (props) => {
+const Tabs: React.FC<TabsProps> & TabsSubComponents = (props) => {
   const {children, className, block, ...restProps} = props;
 
   const classes = classNames('tabs', {'tabs--block': block}, className);
@@ -22,5 +15,7 @@ const Tabs: React.FC<Props> & SubComponents = (props) => {
 };
 
 Tabs.Item = Item;
+
+Tabs.propTypes = TabsPropTypes;
 
 export default Tabs;

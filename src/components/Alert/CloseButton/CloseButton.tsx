@@ -1,8 +1,7 @@
 import classNames from 'classnames';
+import {AlertCloseButtonProps} from './CloseButton.props';
 
-type Props = React.ButtonHTMLAttributes<HTMLButtonElement>;
-
-const CloseButton: React.VFC<Props> = (props) => {
+const CloseButton: React.VFC<AlertCloseButtonProps> = (props) => {
   const {className, ...restProps} = props;
 
   const classes = classNames('clean-btn', 'close', className);

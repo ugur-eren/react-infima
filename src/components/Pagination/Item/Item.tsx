@@ -1,11 +1,7 @@
 import classNames from 'classnames';
+import {PaginationItemProps, PaginationItemPropTypes} from './Item.props';
 
-interface Props extends React.HTMLAttributes<HTMLLIElement> {
-  active?: boolean;
-  disabled?: boolean;
-}
-
-const Item: React.FC<Props> = (props) => {
+const Item: React.FC<PaginationItemProps> = (props) => {
   const {children, className, active, disabled, ...restProps} = props;
 
   const classes = classNames(
@@ -22,5 +18,7 @@ const Item: React.FC<Props> = (props) => {
     </li>
   );
 };
+
+Item.propTypes = PaginationItemPropTypes;
 
 export default Item;

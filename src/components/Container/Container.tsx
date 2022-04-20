@@ -1,10 +1,7 @@
 import classNames from 'classnames';
+import {ContainerProps, ContainerPropTypes} from './Container.props';
 
-interface Props extends React.HTMLAttributes<HTMLDivElement> {
-  fluid?: boolean;
-}
-
-const Container: React.FC<Props> = (props) => {
+const Container: React.FC<ContainerProps> = (props) => {
   const {children, className, fluid, ...restProps} = props;
 
   const classes = classNames('container', {'container--fluid': fluid}, className);
@@ -15,5 +12,7 @@ const Container: React.FC<Props> = (props) => {
     </div>
   );
 };
+
+Container.propTypes = ContainerPropTypes;
 
 export default Container;

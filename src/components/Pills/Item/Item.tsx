@@ -1,10 +1,7 @@
 import classNames from 'classnames';
+import {PillsItemProps, PillsItemPropTypes} from './Item.props';
 
-interface Props extends React.HTMLAttributes<HTMLLIElement> {
-  active?: boolean;
-}
-
-const Item: React.FC<Props> = (props) => {
+const Item: React.FC<PillsItemProps> = (props) => {
   const {children, className, active, ...restProps} = props;
 
   const classes = classNames('pills__item', {'pills__item--active': active}, className);
@@ -15,5 +12,7 @@ const Item: React.FC<Props> = (props) => {
     </li>
   );
 };
+
+Item.propTypes = PillsItemPropTypes;
 
 export default Item;

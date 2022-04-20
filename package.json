@@ -36,7 +36,8 @@
     "lint:check": "eslint src/**/*.{ts,tsx}"
   },
   "dependencies": {
-    "classnames": "^2.3.1"
+    "classnames": "^2.3.1",
+    "prop-types": "^15.8.1"
   },
   "peerDependencies": {
     "infima": ">=0.2.0-alpha.37",
