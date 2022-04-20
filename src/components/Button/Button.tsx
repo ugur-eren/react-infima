@@ -1,17 +1,8 @@
 import classNames from 'classnames';
 import {DefaultSize, DefaultTheme} from '../../Constants';
-import {Size, Theme} from '../../Types';
+import {ButtonProps, ButtonPropTypes} from './Button.props';
 
-interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  theme?: Theme | 'link';
-  size?: Size;
-  outline?: boolean;
-  active?: boolean;
-  disabled?: boolean;
-  block?: boolean;
-}
-
-const Button: React.FC<Props> = (props) => {
+const Button: React.FC<ButtonProps> = (props) => {
   const {
     children,
     type = 'button',
@@ -28,16 +19,12 @@ const Button: React.FC<Props> = (props) => {
   const classes = classNames(
     'button',
 
-    {'button--primary': theme === 'primary'},
-    {'button--secondary': theme === 'secondary'},
-    {'button--success': theme === 'success'},
-    {'button--info': theme === 'info'},
-    {'button--warning': theme === 'warning'},
-    {'button--danger': theme === 'danger'},
-    {'button--link': theme === 'link'},
+    `button--${theme}`,
 
-    {'button--sm': size === 'small'},
-    {'button--lg': size === 'large'},
+    {
+      'button--sm': size === 'small',
+      'button--lg': size === 'large',
+    },
 
     {'button--outline': outline},
     {'button--active': active},
@@ -53,5 +40,7 @@ const Button: React.FC<Props> = (props) => {
     </button>
   );
 };
+
+Button.propTypes = ButtonPropTypes;
 
 export default Button;
