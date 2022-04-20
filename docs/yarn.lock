@@ -5951,7 +5951,7 @@ prompts@^2.4.1, prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.6.2, prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -6145,12 +6145,13 @@ react-html-parser@^2.0.2:
   dependencies:
     htmlparser2 "^3.9.0"
 
-react-infima@^0.0.1-alpha.1:
-  version "0.0.1-alpha.2"
-  resolved "https://registry.npmjs.org/react-infima/-/react-infima-0.0.1-alpha.2.tgz#c1ee1549df751c7e52edf5fdf1d1380faa009037"
-  integrity sha512-p38EG4af1sEQzW4xxW0OwcumOvYhwHk5qbBSAVQPv7ta4bXSlF2dk58wBk34a9FQFwueiv14MYMTZHi6thbXtA==
+react-infima@^0.0.1-alpha.3:
+  version "0.0.1-alpha.3"
+  resolved "https://registry.npmjs.org/react-infima/-/react-infima-0.0.1-alpha.3.tgz#955f0618291fb8d2c06725f39a419fd5c1d074bf"
+  integrity sha512-O9G4vKHoecpP2qn+f0VnobI57XkZEBaunqcg6B/EcKPE6d94JN/p4dJyubh96xdfKony7A7jzVc7+TrNZPKpzA==
   dependencies:
     classnames "^2.3.1"
+    prop-types "^15.8.1"
 
 react-is@^16.13.1, react-is@^16.6.0, react-is@^16.7.0:
   version "16.13.1"
