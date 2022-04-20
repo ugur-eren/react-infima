@@ -1,19 +1,10 @@
 import classNames from 'classnames';
-import {Size} from '../../Types';
 import {DefaultSize} from '../../Constants';
-import Item from './Item';
-import Link from './Link';
+import Item from './Item/Item';
+import Link from './Link/Link';
+import {PaginationProps, PaginationPropTypes, PaginationSubComponents} from './Pagination.props';
 
-interface Props extends React.HTMLAttributes<HTMLUListElement> {
-  size?: Size;
-}
-
-interface SubComponents {
-  Item: typeof Item;
-  Link: typeof Link;
-}
-
-const Pagination: React.FC<Props> & SubComponents = (props) => {
+const Pagination: React.FC<PaginationProps> & PaginationSubComponents = (props) => {
   const {children, className, size = DefaultSize, ...restProps} = props;
 
   const classes = classNames(
@@ -34,5 +25,7 @@ const Pagination: React.FC<Props> & SubComponents = (props) => {
 
 Pagination.Item = Item;
 Pagination.Link = Link;
+
+Pagination.propTypes = PaginationPropTypes;
 
 export default Pagination;
