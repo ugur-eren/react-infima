@@ -1,15 +1,8 @@
 import classNames from 'classnames';
-import Item from './Item';
+import Item from './Item/Item';
+import {PillsProps, PillsPropTypes, PillsSubComponents} from './Pills.props';
 
-interface Props extends React.HTMLAttributes<HTMLUListElement> {
-  block?: boolean;
-}
-
-interface SubComponents {
-  Item: typeof Item;
-}
-
-const Pills: React.FC<Props> & SubComponents = (props) => {
+const Pills: React.FC<PillsProps> & PillsSubComponents = (props) => {
   const {children, className, block, ...restProps} = props;
 
   const classes = classNames('pills', {'pills--block': block}, className);
@@ -22,5 +15,7 @@ const Pills: React.FC<Props> & SubComponents = (props) => {
 };
 
 Pills.Item = Item;
+
+Pills.propTypes = PillsPropTypes;
 
 export default Pills;
