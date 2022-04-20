@@ -1,15 +1,7 @@
 import classNames from 'classnames';
+import {PaginationNavItemProps, PaginationNavItemPropTypes} from './Item.props';
 
-interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
-  type?: 'previous' | 'next';
-  label?: string;
-  sublabel?: string;
-  linkClassName?: string;
-  labelClassName?: string;
-  sublabelClassName?: string;
-}
-
-const Item: React.VFC<Props> = (props) => {
+const Item: React.VFC<PaginationNavItemProps> = (props) => {
   const {
     className,
     type = 'previous',
@@ -42,5 +34,7 @@ const Item: React.VFC<Props> = (props) => {
     </div>
   );
 };
+
+Item.propTypes = PaginationNavItemPropTypes;
 
 export default Item;
