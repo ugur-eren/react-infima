@@ -1,17 +1,9 @@
 import classNames from 'classnames';
-import Title from './Title';
-import Subtitle from './Subtitle';
+import Title from './Title/Title';
+import Subtitle from './Subtitle/Subtitle';
+import {HeroProps, HeroPropTypes, HeroSubComponents} from './Hero.props';
 
-interface Props extends React.HTMLAttributes<HTMLDivElement> {
-  theme?: 'default' | 'dark' | 'primary';
-}
-
-interface SubComponents {
-  Title: typeof Title;
-  Subtitle: typeof Subtitle;
-}
-
-const Hero: React.FC<Props> & SubComponents = (props) => {
+const Hero: React.FC<HeroProps> & HeroSubComponents = (props) => {
   const {children, className, theme = 'default', ...restProps} = props;
 
   const classes = classNames(
@@ -32,5 +24,7 @@ const Hero: React.FC<Props> & SubComponents = (props) => {
 
 Hero.Title = Title;
 Hero.Subtitle = Subtitle;
+
+Hero.propTypes = HeroPropTypes;
 
 export default Hero;
