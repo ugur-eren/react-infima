@@ -1,10 +1,9 @@
 import PropTypes from 'prop-types';
 import {Sizes} from '../../../Constants';
-import {Size} from '../../../Types';
+import {Size, WithoutChildren} from '../../../Types';
 
 export interface AvatarPhotoProps
-  extends React.ImgHTMLAttributes<HTMLImageElement>,
-    React.HTMLAttributes<HTMLImageElement> {
+  extends WithoutChildren<React.ImgHTMLAttributes<HTMLImageElement>> {
   size?: Size | 'xlarge';
 }
 

@@ -1,8 +1,9 @@
 import classNames from 'classnames';
+import {WithoutChildren} from '../../Types';
 
-type Props = React.ImgHTMLAttributes<HTMLImageElement> & React.HTMLAttributes<HTMLImageElement>;
+type Props = WithoutChildren<React.ImgHTMLAttributes<HTMLImageElement>>;
 
-const Logo: React.VFC<Props> = (props) => {
+const Logo: React.FC<Props> = (props) => {
   const {className, ...restProps} = props;
 
   const classes = classNames('footer__logo', className);

@@ -1,1 +1,3 @@
-export type AlertCloseButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
+import {WithoutChildren} from '../../../Types';
+
+export type AlertCloseButtonProps = WithoutChildren<React.ButtonHTMLAttributes<HTMLButtonElement>>;

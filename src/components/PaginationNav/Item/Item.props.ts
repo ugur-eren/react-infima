@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
+import {WithoutChildren} from '../../../Types';
 
-export interface PaginationNavItemProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+export interface PaginationNavItemProps
+  extends WithoutChildren<React.AnchorHTMLAttributes<HTMLAnchorElement>> {
   type?: 'previous' | 'next';
   label?: React.ReactNode;
   sublabel?: React.ReactNode;

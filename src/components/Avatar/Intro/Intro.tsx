@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import {AvatarIntroProps, AvatarIntroPropTypes} from './Intro.props';
 
-const Intro: React.VFC<AvatarIntroProps> = (props) => {
+const Intro: React.FC<AvatarIntroProps> = (props) => {
   const {className, name, subtitle, nameClassName, subtitleClassName, ...restProps} = props;
 
   const introClasses = classNames('avatar__intro', className);

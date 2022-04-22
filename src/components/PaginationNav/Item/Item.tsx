@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import {PaginationNavItemProps, PaginationNavItemPropTypes} from './Item.props';
 
-const Item: React.VFC<PaginationNavItemProps> = (props) => {
+const Item: React.FC<PaginationNavItemProps> = (props) => {
   const {
     className,
     type = 'previous',

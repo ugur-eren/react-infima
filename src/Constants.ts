@@ -4,5 +4,4 @@ export const Themes: Theme[] = ['primary', 'secondary', 'success', 'info', 'warn
 export const Sizes: Size[] = ['small', 'normal', 'large'];
 
 export const DefaultTheme: Theme = 'secondary';
-
 export const DefaultSize: Size = 'normal';

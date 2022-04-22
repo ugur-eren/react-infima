@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
+import {WithoutChildren} from '../../../Types';
 
-export interface AvatarIntroProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface AvatarIntroProps extends WithoutChildren<React.HTMLAttributes<HTMLDivElement>> {
   name: React.ReactNode;
   subtitle?: React.ReactNode;
   nameClassName?: string;

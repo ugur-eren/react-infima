@@ -1,10 +1,11 @@
 import classNames from 'classnames';
+import {WithoutChildren} from '../../Types';
 
-interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
+interface Props extends WithoutChildren<React.InputHTMLAttributes<HTMLInputElement>> {
   containerClassName?: string;
 }
 
-const Search: React.VFC<Props> = (props) => {
+const Search: React.FC<Props> = (props) => {
   const {className, containerClassName, ...restProps} = props;
 
   const containerClasses = classNames('navbar__search', containerClassName);
