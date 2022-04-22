@@ -24,7 +24,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-html-parser": "^2.0.2",
-    "react-infima": "^0.0.1-alpha.3",
+    "react-infima": "^0.0.1-alpha.4",
     "react-live": "^2.4.1"
   },
   "browserslist": {

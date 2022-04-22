@@ -1,6 +1,6 @@
 {
   "name": "react-infima",
-  "version": "0.0.1-alpha.3",
+  "version": "0.0.1-alpha.4",
   "title": "React Infima",
   "description": "React components for infima. This doesn't add any new features to infima, just ports the components to react.",
   "private": false,

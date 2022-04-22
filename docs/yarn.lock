@@ -6145,10 +6145,10 @@ react-html-parser@^2.0.2:
   dependencies:
     htmlparser2 "^3.9.0"
 
-react-infima@^0.0.1-alpha.3:
-  version "0.0.1-alpha.3"
-  resolved "https://registry.npmjs.org/react-infima/-/react-infima-0.0.1-alpha.3.tgz#955f0618291fb8d2c06725f39a419fd5c1d074bf"
-  integrity sha512-O9G4vKHoecpP2qn+f0VnobI57XkZEBaunqcg6B/EcKPE6d94JN/p4dJyubh96xdfKony7A7jzVc7+TrNZPKpzA==
+react-infima@^0.0.1-alpha.4:
+  version "0.0.1-alpha.4"
+  resolved "https://registry.npmjs.org/react-infima/-/react-infima-0.0.1-alpha.4.tgz#3fbcaab78e7afd9e2eb5f0000fefa8281b1f7450"
+  integrity sha512-4RpQeiHxiocPXO3tdd54wCbZx747OvBvbB1PVdE6Pu3bA2tvFyOJl+93b0lZRxM2qjN8Z/pssmD7JzcuXmCQ4w==
   dependencies:
     classnames "^2.3.1"
     prop-types "^15.8.1"
